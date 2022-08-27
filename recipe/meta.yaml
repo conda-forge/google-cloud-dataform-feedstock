@@ -1,5 +1,5 @@
 {% set name = "google-cloud-dataform" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-dataform-{{ version }}.tar.gz
-  sha256: 6b7147930e5e515219a5a39dcaa8618fa97b1249740743e1df009f8c88fa9e83
+  sha256: da184293e66c33c3b5a10b2b7556b739c99d53732c8cadb6579117c53a4d0f45
 
 build:
   noarch: python
@@ -22,8 +22,8 @@ requirements:
     - python >=3.7
     - google-api-core >=2.8.0,<3.0.0dev
     - grpc-google-iam-v1 >=0.12.4,<1.0.0dev
-    - proto-plus >=1.22.0,<2.0.0dev
-    - protobuf >=3.19.0,<5.0.0dev
+    - proto-plus >=1.15.0,<2.0.0dev
+    - protobuf >=3.19.0,<4.0.0dev
 
 test:
   imports:
