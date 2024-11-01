@@ -9,7 +9,7 @@ Package license: Apache-2.0
 
 Summary: Google Cloud Dataform API client library
 
-Development: https://github.com/googleapis/python-dataform
+Development: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-dataform
 
 Current build status
 ====================
