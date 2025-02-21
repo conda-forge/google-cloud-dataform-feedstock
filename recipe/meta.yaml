@@ -1,5 +1,5 @@
 {% set name = "google-cloud-dataform" %}
-{% set version = "0.5.15" %}
+{% set version = "0.5.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 2333aff07e92d74060afa5c0d8df908f6bcfa0a8a710c2f77a9e0d7b26e4fa55
+  sha256: 6a9911526d3eca086a47b870d1c94a8c83098b71748acddf990a71fdb4f5478b
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     # more restrictive version for python 3.13
     - proto-plus >=1.25.0,<2.0.0dev
     - protobuf >=3.20.2,<6.0.0dev,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
-    - grpc-google-iam-v1 >=0.12.4,<1.0.0dev
+    - grpc-google-iam-v1 >=0.14.0,<1.0.0dev
 
 test:
   imports:
