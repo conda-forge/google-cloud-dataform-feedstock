@@ -1,5 +1,5 @@
 {% set name = "google-cloud-dataform" %}
-{% set version = "0.5.16" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6a9911526d3eca086a47b870d1c94a8c83098b71748acddf990a71fdb4f5478b
+  sha256: bbe034925eba2e51e9ef79a62e079c248073e06aa43beba2ebc14e96d27c7891
 
 build:
   noarch: python
