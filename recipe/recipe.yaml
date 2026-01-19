@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-dataform
-  version: 0.7.0
+  version: "0.8.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_cloud_dataform-${{ version }}.tar.gz
-  sha256: 759fc4d28f0b53c30ace2a2f381fdd3517cbd0ddb337abaef22a89f3a9e1b7d3
+  sha256: f36c414c19814f014682235543e2517132145fb4dd5c267a2c56f24714f1ca57
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
