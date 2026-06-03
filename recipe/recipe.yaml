@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-dataform
-  version: "0.10.0"
+  version: "0.11.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_cloud_dataform-${{ version }}.tar.gz
-  sha256: 38dd3d585ac580fdc61814b8b2dfb133e7dfb5ed8a925a2b8b41a7c7eb06c970
+  sha256: 6a8a571817c227552f28df4f6ed67edd6b678032ee076fc47acfd825f72f8165
 
 build:
   number: 0
