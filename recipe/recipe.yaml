@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-dataform
-  version: "0.11.2"
+  version: "0.11.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_cloud_dataform-${{ version }}.tar.gz
-  sha256: dd64685066cd0bc068220148114ec2d847092b21ddf62abe3f47828dcafef548
+  sha256: 513b8b0ebecb53a2f0809991b10acd3f5d6d1f06d777d3a365300f0598babb69
 
 build:
   number: 0
@@ -24,10 +24,9 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - google-api-core >=2.24.2,<3.0.0
-    - google-api-core-grpc
+    - google-api-core-grpc >=2.25.0,<3.0.0
     - google-auth >=2.14.1,<3.0.0,!=2.24.0,!=2.25.0
-    # more restrictive constraint for python >=3.14
+    # tightest of upstream's floors (python >=3.14)
     - grpcio >=1.75.1,<2.0.0
     - proto-plus >=1.26.1,<2.0.0
     - protobuf >=6.33.5,<8.0.0
